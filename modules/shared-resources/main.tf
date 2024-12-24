@@ -24,3 +24,8 @@ resource "google_redis_instance" "redis" {
     delete = "5m"
    }
 }
+
+resource "google_sql_database" "database" {
+  name     = var.database_name
+  instance = google_redis_instance.redis.name
+}

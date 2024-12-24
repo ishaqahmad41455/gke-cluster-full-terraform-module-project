@@ -32,3 +32,7 @@ variable "redis_alt_zone" {
   description = "The alternative zone for Redis (for high availability)"
   type        = string
 }
+
+variable "database_name" {
+  
+}

@@ -121,4 +121,5 @@ module "shared-resources" {
   redis_zone = var.redis_zone
   tier = var.tier
   network_id = module.vpc_network.vpc_network_id
+  database_name = var.database_name
 }
